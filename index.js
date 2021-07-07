@@ -1,13 +1,9 @@
-const spanEl = document.getElementById('span-el')
-//span 태그를 가져온다
+const cursorEl = document.getElementById('cursor')
 
-window.addEventListener('resize', () => {
-    spanEl.textContent = `window.screen : ${window.screen.width}, ${window.screen.height} window.outer : ${window.outerWidth}, ${window.outerHeight} window.inner : ${window.innerWidth}, ${window.innerHeight}`
-    console.log(documentElement.clientWidth)
-    
+window.addEventListener('mousemove', (e) => {
+    cursorEl.style.top =`${e.pageY}px`
+    cursorEl.style.left = `${e.pageX}px`;
 })
-
-window();
-
-//window에 resize 이벤트를 걸어서 사이즈 변경사항을
-//console에 표기한다
+//window에 mousemove 이벤트 추가
+//실제적으로 mouse의 좌표를 확인하려면 mousemove
+//mousemove 이벤트의 pageX, pageY좌표를 확인한다
