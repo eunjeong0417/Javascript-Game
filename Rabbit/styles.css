@@ -1,32 +1,30 @@
-*{
-    padding: 0;
-    margin:0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: black;
-}
-.img-el {
-    width:100px;
+  background-color: rgb(14, 0, 0);
+  text-align: center;
 }
 
-.container {
-    margin-left: 50%;
+img {
+  display: block;
+  margin: auto;
+  width: 100px;
 }
 
-.rabbit-el {
-    position:fixed;
-    margin-left: 50%;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    font-size: 25px;
-    background-color: yellowgreen;
-    color:white;
-    border-radius: 8px;
-    padding: 10px;
+button {
+  outline: none;
+  background-color: tomato;
+  font-size: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
 }
 
-.rabbit{
-    width:100px;
+button:active {
+  box-shadow: 1px 1px 0 rgba(180, 167, 167, 0.5);
+  position: relative;
+  top: 2px;
 }
-

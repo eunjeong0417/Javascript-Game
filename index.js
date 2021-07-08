@@ -14,7 +14,7 @@
 //상수 변수 const로 만든다
 const lineyEl = document.getElementById('line-Y')
 const linexEl = document.getElementById('line-X')
-const imgEl = document.querySelector('.target')
+const cursorEl = document.getElementById('cursor')
 const spanEl = document.getElementById('tag')
 
 window.addEventListener('mousemove', (e)=>{
@@ -26,8 +26,10 @@ window.addEventListener('mousemove', (e)=>{
     //pageX, pageY 좌표를 style 속성으로 넣어준다
     //style.top은 Y축
     //style.left는 X축
-    imgEl.style.top = `${Y}px`
-    imgEl.style.left = `${X}px`
+    cursorEl.textContent = ""
+    cursorEl.style.top = `${Y}px`
+    cursorEl.style.left = `${X}px`
+    cursorEl.textContent += "🔍"
 //Template literals 사용
     lineyEl.style.left = `${X}px`
     linexEl.style.top = `${Y}px`
